@@ -15,12 +15,23 @@ AutoSource framework is capable of performing source code review on all platform
 
 ## Screenshots
 
-![execution](/images/downloadSonar.png)
-![execution](/images/sonarIsUp.png)
-![execution](/images/executeScanner.png)
-![execution](/images/executingScript.png)
-![execution](/images/scannerExecutionSuccess.png)
-![execution](/images/resultInSonar.png)
+### Downloading SonarQube and SonarScanner
+![Downloading SonarQube and SonarScanner](/images/downloadSonar.png)
+
+### SonarQube is up and running
+![SonarQube is Up and Running](/images/sonarIsUp.png)
+
+### Executing Scanner
+![Executing SonarScanner](/images/executeScanner.png)
+
+### Scanning Started
+![SonarScanning Started](/images/executingScript.png)
+
+### Scanner Execution Successful
+![Scanner Execution Successful](/images/scannerExecutionSuccess.png)
+
+### Results showing in SonarQube Dashboard
+![Results showing in SonarQube Dashboard](/images/resultInSonar.png)
 
 ## Collaborators
 * Malkit Singh
