@@ -8,8 +8,8 @@ AutoSource framework is capable of performing source code review on all platform
 
 1. Download the AutoSource repository into your system.
 2. Read the prerequisites.txt file and install the dependencies (mentioned for each platform)
-3. Execute python3 downloadSonar.py, this will download and setup the SonarQube framework which can be access from 'http://127.0.0.1:9000'
-4. After that run python3 executeScanner.py, this will ask for your GIT repository that you want to scan.
+3. Execute downloadSonar.py (python3 downloadSonar.py), this will download and setup the SonarQube framework which can be access from 'http://127.0.0.1:9000'
+4. After that run executeScanner.py (python3 executeScanner.py), this will ask for your GIT repository that you want to scan.
 5. Access the results on SonarQube Portal('http://127.0.0.1:9000')
 
 ## Collaborators
