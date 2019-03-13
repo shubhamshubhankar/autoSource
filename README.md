@@ -1,0 +1,2 @@
+# autoSource
+Automated SonarQube
