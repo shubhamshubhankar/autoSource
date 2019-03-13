@@ -1,0 +1,64 @@
+# Download the requirements for Mac OX
+
+# To install brew
+sudo /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+# To install newest version of python 3 and pip3
+sudo brew install python3
+
+# To install git for python
+sudo pip3 install gitpython
+
+# To install java JDK, we use brew and download
+sudo brew cask install java
+
+# To install requests in python3
+sudo pip3 install requests
+
+
+#----------------------------------------------------------------------------------------------------------------------------------
+
+# Download the requirements for Ubuntu and other Linux devices
+sudo apt-get update
+
+# To install python
+sudo apt-get install python3.7
+
+# To install pip3
+sudo apt-get install python3-pip
+
+# To install requests in python3
+sudo pip3 install requests
+
+# To install git for python
+sudo pip3 install gitpython
+
+# To install git
+sudo apt-get install git
+
+# To install JDK in linux system
+sudo apt-get install openjdk-8-jdk
+
+
+#----------------------------------------------------------------------------------------------------------------------------------
+
+# Download the requirements for Windows Machine
+
+# Install Git in windows 
+#1. Install Git in Windows from https://git-scm.com/download/win
+#2. Install python from https://www.python.org/ftp/python/3.8.0/python-3.8.0a2-amd64.exe
+#3. Check if pip3 is installed in windows correctly in Windows:
+#	Ideally it should be present in Scripts path of your Python installation
+#	Use command "where python" to get the location
+#	You can if check pip3 works with this absolute path:
+#	C:\path\to\python\Scripts\pip3
+#	If 	yes, add C:\path\to\python\Scripts to your environmental variable PATH 
+#4. Install latest version of JDK from https://www.oracle.com/technetwork/java/javase/downloads/index.html 
+#5. To install git for python 
+	pip3 install gitpython
+#6. To install requests in python3
+	pip3 install requests
+#7. https://github.com/gitpython-developers/GitPython/issues/816 
+
+#8. Check whether the windows is 64 bit or 32 bit by using this command in windows CMD "wmic os get osarchitecture"
+
