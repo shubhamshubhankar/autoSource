@@ -4,7 +4,7 @@ AutoSource is an automated source code review framework integrated with SonarQub
 
 AutoSource framework is capable of performing source code review on all platforms(MAC, Linux and Windows).  
 
-Steps for Setup:
+## Steps for Setup:
 
 1. Download the AutoSource repository into your system.
 2. Read the prerequisites.txt file and install the dependencies (mentioned for each platform)
@@ -12,6 +12,6 @@ Steps for Setup:
 4. After that run python3 executeScanner.py, this will ask for your GIT repository that you want to scan.
 5. Access the results on SonarQube Portal('http://127.0.0.1:9000')
 
-Collaborators
+## Collaborators
 * Malkit Singh
 * Shubham Shubhankar Sharma
