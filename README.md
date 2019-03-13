@@ -12,3 +12,6 @@ Steps for Setup:
 4. After that run python3 executeScanner.py, this will ask for your GIT repository that you want to scan.
 5. Access the results on SonarQube Portal('http://127.0.0.1:9000')
 
+Collaborators
+* Malkit Singh
+* Shubham Shubhankar Sharma
