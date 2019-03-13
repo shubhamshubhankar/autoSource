@@ -12,7 +12,7 @@ AutoSource framework is capable of performing source code review on all platform
 4. After that run executeScanner.py (python3 executeScanner.py), this will ask for your GIT repository that you want to scan.
 5. Access the results on SonarQube Portal('http://127.0.0.1:9000')
 
-![Download Sonar](/images/downloadSonar.png)
+
 
 ## Collaborators
 * Malkit Singh
