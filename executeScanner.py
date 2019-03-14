@@ -1,7 +1,7 @@
 
 #Program to run SonarQube, SonarScanner and ElasticSearch which will scan a repo and provide results. 
 
-from sys
+import sys
 from threading import Thread
 import os 
 import zipfile
