@@ -20,18 +20,40 @@ from subprocess import Popen
 # Get the current directory where the script is running
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
+# ************************************************************************************
 # Function to run Elastic Search Mac OX
-def runElasticSearchUnix():
+def runElasticSearchMac():
 	subprocess.call("chmod -R 777 sonarQube",shell=True)
 	subprocess.call("./sonarQube/elasticsearch/bin/elasticsearch", shell=True)
 	time.sleep(8)
 
 # Function to run SonarQube Mac OX 
-def runSonarQubeUnix():
+def runSonarQubeMac():
 	subprocess.call("chmod -R 777 sonarQube", shell=True)
 	subprocess.call("./sonarQube/bin/macosx-universal-64/sonar.sh console", shell=True)
-	time.sleep(8)
+	time.sleep(8)	
 
+# ************************************************************************************	
+# Function to run Elastic Search Linux
+def runElasticSearchLinux():
+	subprocess.call("chmod -R 777 sonarQube",shell=True)
+	subprocess.call("./sonarQube/elasticsearch/bin/elasticsearch", shell=True)
+	time.sleep(8)	
+
+# Function to run SonarQube for Linux
+def runSonarQubeLinux():
+    bit = str(platform.architecture()[0])
+    if(bit=="64bit"):
+    	# This is path for StartSonar.bat file and will be run from here
+    	subprocess.call("chmod -R 777 sonarQube", shell=True)
+	subprocess.call("./sonarQube/bin/linux-x86-64/sonar.sh console", shell=True)
+    elif(bit=="32bit"):
+    	# This is path for StartSonar.bat file and will be run from here
+    	subprocess.call("chmod -R 777 sonarQube", shell=True)
+	subprocess.call("./sonarQube/bin/linux-x86-32/sonar.sh console", shell=True)
+    time.sleep(8)
+# ************************************************************************************	
+	
 # Function to run Elastic Search and SonarQube for Windows
 def runElasticSearchAndSonarWindows():
     bit = str(platform.architecture()[0])
@@ -45,7 +67,7 @@ def runElasticSearchAndSonarWindows():
     p = Popen(sonarQubePath)
     p.communicate()
     time.sleep(8)
-
+# ************************************************************************************
 
 # Function Report Hook is to show the progress report of the downloading process in the terminal
 def reporthook(count, block_size, total_size):
@@ -150,9 +172,9 @@ if __name__ == '__main__':
 	# Checking the OS of the user's system
 	if sys.platform=="darwin":
 		print("Mac OS recognised ... \n")	
-		Thread(target=runElasticSearchUnix).start()
+		Thread(target=runElasticSearchMac).start()
 		time.sleep(8)
-		Thread(target=runSonarQubeUnix).start()
+		Thread(target=runSonarQubeMac).start()
 		time.sleep(8)
 
 	elif sys.platform=="win32" or sys.platform=="win64"  or "win" in sys.platform:
@@ -163,9 +185,9 @@ if __name__ == '__main__':
 
 	elif sys.platform=="linux1" or sys.platform=="linux2" or sys.platform=="linux":
 		print("Linux recognised ... \n")	
-		Thread(target=runElasticSearchUnix).start()
+		Thread(target=runElasticSearchLinux).start()
 		time.sleep(8)
-		Thread(target=runSonarQubeUnix).start()
+		Thread(target=runSonarQubeLinux).start()
 		time.sleep(8)
 	
 	
