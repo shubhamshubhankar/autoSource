@@ -161,7 +161,7 @@ if __name__ == '__main__':
 		time.sleep(8)
 
 
-	elif sys.platform=="linux1" or sys.platform=="linux2":
+	elif sys.platform=="linux1" or sys.platform=="linux2" or sys.platform=="linux":
 		print("Linux recognised ... \n")	
 		Thread(target=runElasticSearchUnix).start()
 		time.sleep(8)
