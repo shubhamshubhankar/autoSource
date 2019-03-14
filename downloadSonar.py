@@ -1,7 +1,7 @@
 
 #Program to download and scan SonarQube, SonarScanner and ElasticSearch.
 
-from sys import platform
+import platform
 from threading import Thread
 import os 
 import zipfile
@@ -148,20 +148,20 @@ if __name__ == '__main__':
 	downloadSonarScanner()
 
 	# Checking the OS of the user's system
-	if platform=="darwin":
+	if sys.platform=="darwin":
 		print("Mac OS recognised ... \n")	
 		Thread(target=runElasticSearchUnix).start()
 		time.sleep(8)
 		Thread(target=runSonarQubeUnix).start()
 		time.sleep(8)
 
-	elif platform=="win32" or platform=="win64"  or "win" in platform:
+	elif sys.platform=="win32" or sys.platform=="win64"  or "win" in sys.platform:
 		print("Windows recognised ... \n")
 		Thread(target=runElasticSearchAndSonarWindows).start()
 		time.sleep(8)
 
 
-	elif platform=="linux1" or platform=="linux2":
+	elif sys.platform=="linux1" or sys.platform=="linux2":
 		print("Linux recognised ... \n")	
 		Thread(target=runElasticSearchUnix).start()
 		time.sleep(8)
