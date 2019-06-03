@@ -34,5 +34,5 @@ AutoSource framework is capable of performing source code review on all platform
 ![Results showing in SonarQube Dashboard](/images/resultInSonar.png)
 
 ## Collaborators
-* Malkit Singh
-* Shubham Shubhankar Sharma
+* [Malkit Singh](https://www.linkedin.com/in/malkit-singh-oscp-crest-cpsa-crt-4005b916/)
+* [Shubham Shubhankar Sharma](https://www.linkedin.com/in/shubham-subhankar-sharma-4b410695/)
